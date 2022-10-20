@@ -2,6 +2,7 @@
 import inquirer from "inquirer";
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMardown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -10,12 +11,28 @@ const questions = [
     type: "input",
     name: "title",
     message: "What is your project's title?",
+    // Validating there is a description value entered
+    validate: (titleInput) => {
+      if (titleInput) {
+        return true;
+      } else {
+        console.log("A repository name is required!");
+        return false;
+      }
+    },
   },
   // Description
   {
     type: "input",
     name: "description",
     message: "What is your project's description?",
+    validate: (descriptionInput) => {
+      if (descriptionInput) {
+        return true;
+      } else {
+        console.log("Please enter a repository description.");
+      }
+    },
   },
   // Installation
   {
@@ -34,6 +51,14 @@ const questions = [
     type: "checkbox",
     name: "license",
     message: "How can you test your project?",
+    choices: [
+      "Apache License 2.0",
+      "GNU GPLv3",
+      "GNU GPLv2",
+      "MIT License",
+      "Mozilla Public License 2.0",
+      "The Unlicense",
+    ],
   },
   // Contributing
   {
