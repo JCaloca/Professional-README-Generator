@@ -72,17 +72,11 @@ const questions = [
     name: "tests",
     message: "How can you test your project?",
   },
-  // Questions
-  {
-    type: "input",
-    name: "questions",
-    message: "How would you like people to contact you for questions?",
-  },
   // GitHub UserName
   {
     type: "input",
     name: "github",
-    message: "How can you test your project?",
+    message: "What is your GitHub username?",
   },
   //Email Address
   {
