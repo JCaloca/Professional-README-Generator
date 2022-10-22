@@ -22,7 +22,10 @@ npm -init
 
 ## Usage
 
-Ease the repetetive nature of this task.
+Link to view video of [application](https://drive.google.com/file/d/1ksLaXOlR5w2aKtisgfok9KjeGmrUe-vS/view)
+
+Example of generated README.md:
+![Example README](./assets/ScreenShot.png)
 
 ## License
 
