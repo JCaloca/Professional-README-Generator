@@ -5,7 +5,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
-  // Project Title
+  // Repository Title
   {
     type: "input",
     name: "title",
@@ -40,16 +40,15 @@ const questions = [
   },
   // License
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
-    message: "How can you test your project?",
+    message: "Choose a license.",
     choices: [
       "Apache License 2.0",
       "GNU GPLv3",
-      "GNU GPLv2",
       "MIT License",
       "Mozilla Public License 2.0",
-      "The Unlicense",
+      "ODBL",
     ],
   },
   // Contributing
