@@ -22,11 +22,7 @@ npm -init
 
 ## Usage
 
-Ease the worflow and alleviate time allocated to repetetive tasks.
-
-## Credits
-
-undefined
+Ease the repetetive nature of this task.
 
 ## License
 
